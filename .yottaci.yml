@@ -1,6 +1,5 @@
-# first document
----
 bitbake_target: helloworld-empty
+configuration_name: pyro
 bitbake_ref: 1.34
 oecore_ref: pyro
 localconf: |
@@ -9,19 +8,5 @@ localconf: |
 dependencies:
   - url: git://git.openembedded.org/meta-openembedded
     ref: pyro
-    layers:
-      - meta-oe
----
-# second document
----
-bitbake_target: helloworld-empty
-configuration_name: latest
-bitbake_ref: master
-oecore_ref: master
-localconf:
-  LICENSE_FLAGS_WHITELIST = "commercial"
-dependencies:
-  - url: git://git.openembedded.org/meta-openembedded
-    ref: master
     layers:
       - meta-oe
